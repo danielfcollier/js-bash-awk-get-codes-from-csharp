@@ -5,4 +5,4 @@ RUN apk add --update gawk icu-data-full make nodejs
 
 COPY . .
 
-RUN make
+RUN make local
