@@ -1,2 +1,7 @@
-node_modules/
 assets/
+csharp/*
+!csharp/core/tuna.payment/Tuna.Payment.Engine/Services/MessageCategoryEnum.cs
+!csharp/core/tuna.payment/Tuna.Payment.Engine/Services/ResponseUtils.cs
+!csharp/core/tuna.payment/Tuna.Payment.Common/Enum/CardBrandEnum.cs
+!csharp/core/tuna.payment/Tuna.Payment.Common/Enum/PaymentStatusEnum.cs
+!csharp/core/tuna.payment/Tuna.Payment.Common/Enum/PaymentMethodTypeEnum.cs

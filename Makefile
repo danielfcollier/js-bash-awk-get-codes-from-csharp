@@ -11,14 +11,15 @@ run:
 local: clean srv-codes enums
 
 srv-codes:
-	@-./src/srvCodes/main.sh
+	@-bash ./src/srvCodes/main.sh
 
 enums:
-	@-./src/enums/main.sh
+	@-bash ./src/enums/main.sh
 
 enum:
-	@-./src/enums/run.sh ${source}
+	@-bash ./src/enums/run.sh ${source}
 
 clean:
 	@-rm -rf assets
+	@-mkdir assets
 	@-clear
