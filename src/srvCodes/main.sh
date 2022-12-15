@@ -1,13 +1,16 @@
 #!/bin/bash
 
+### .env File:
 source ${PWD}/.env
 
-# Variables definitions
+### Definitions:
 TEMP=".tmp";
 jsonCodes=${TEMP}"/srvCodes.json";
 jsonMessages=${TEMP}"/srvMessages.json";
 tempFile=${TEMP}"/tmp.json";
 outputFile="./assets/srvTunaCodes.json";
+
+### Source Code:
 
 # Init temporary folder
 mkdir ${TEMP} 2> /dev/null;
