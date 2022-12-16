@@ -5,3 +5,4 @@ csharp/*
 !csharp/core/tuna.payment/Tuna.Payment.Common/Enum/CardBrandEnum.cs
 !csharp/core/tuna.payment/Tuna.Payment.Common/Enum/PaymentStatusEnum.cs
 !csharp/core/tuna.payment/Tuna.Payment.Common/Enum/PaymentMethodTypeEnum.cs
+node_modules/
