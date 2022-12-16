@@ -14,7 +14,7 @@ BEGIN {
   if (isEnumValue(previousRowValue, rowValue)) {
     split(getEnumValue(rowValue, previousEnumValue), result, "&");
     key = trim(result[1]);
-    value = result[2];
+    value = removeQuotes(result[2]);
 
     previousEnumValue = value;
 

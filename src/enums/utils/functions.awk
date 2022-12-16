@@ -56,7 +56,11 @@ function removeComma(word) {
 }
 
 function removeQuotes(word) {
-  return substr(word, 2, length(word) - 2);
+  if (match(word, "\"") || match(word, "'")) {
+    return substr(word, 2, length(word) - 2);
+  }
+
+  return word;
 }
 
 function getEnumValue(rowValue, previousEnumValue) {
