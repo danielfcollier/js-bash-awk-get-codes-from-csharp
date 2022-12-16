@@ -3,12 +3,12 @@ const srvMessages = require(`../../../${process.argv[3]}`);
 
 const DEBUG_MODE = false;
 
-const tunaCodes = {};
+const codes = {};
 const missingList = [];
 
 Object.keys(srvCodes).forEach(code => {
   const srvCode = srvCodes[code].code;
-  tunaCodes[code] = {
+  codes[code] = {
       code: srvCode,
       message: srvMessages[srvCode]
     };
@@ -21,5 +21,5 @@ Object.keys(srvCodes).forEach(code => {
 if (DEBUG_MODE) {
   console.log(JSON.stringify(missingList, null, 4));
 } else {
-  console.log(JSON.stringify(tunaCodes, null, 4));
+  console.log(JSON.stringify(codes, null, 4));
 }
