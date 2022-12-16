@@ -19,4 +19,6 @@ gawk -i ${PWD}/src/enums/utils/functions.awk -f ${PWD}/src/enums/handlers/enumHa
 
 node ${PWD}/src/enums/handlers/outputFormatter.js ${tmpFile} > ${outputFile};
 
+bash ${PWD}/src/enums/handlers/descriptionParser.sh ${outputFile};
+
 rm ${tmpFile};

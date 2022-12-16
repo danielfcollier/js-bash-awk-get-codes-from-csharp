@@ -7,7 +7,7 @@ BEGIN {
 {
   rowValue = $0;
 
-  if (isCodeNotation(rowValue)) {
+  if (isDescriptionTag(rowValue)) {
     descriptionTag = getDescriptionTag(rowValue);
   }
 

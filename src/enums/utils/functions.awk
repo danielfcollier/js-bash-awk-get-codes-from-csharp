@@ -27,11 +27,11 @@ function isDescriptionTag(rowValue) {
 }
 
 function hasHiddenTag(previousValue) {
-  return match(previousValue, "hide");
+  return match(previousValue, "hide") || match(previousValue, "skip");
 }
 
 function isEnumValue(previousValue, currentValue) {
-  if (!isCodeNotation(currentValue) && isDescriptionTag(previousValue)) {
+  if (!isCodeNotation(currentValue) && isCodeNotation(previousValue)) {
     if (!hasHiddenTag(previousValue)) {
       return 1;
     }
@@ -53,6 +53,10 @@ function removeComma(word) {
   }
 
   return word;
+}
+
+function removeQuotes(word) {
+  return substr(word, 2, length(word) - 2);
 }
 
 function getEnumValue(rowValue, previousEnumValue) {

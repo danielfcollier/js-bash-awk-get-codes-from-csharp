@@ -1,0 +1,49 @@
+CardBrand:MasterCard: MasterCard card brand.
+CardBrand:VISA: VISA card brand.
+CardBrand:Amex: Amex card brand.
+CardBrand:DinersClub: Dinners Club card brand.
+CardBrand:Elo: Elo card brand.
+CardBrand:Hipercard: Hipercard card brand.
+CardBrand:Alelo: Alelo card brand.
+CardBrand:PrivateLabel: Private Label card brand.
+CardBrand:GiftCard: Gift Card card brand.
+CardBrand:Voucher: Voucher card brand.
+CardBrand:Cabal: Cabal card brand.
+CardBrand:Banescard: Banescard card brand.
+CardBrand:JCB: JCB card brand.
+CardBrand:Mais: Mais card brand.
+CardBrand:Ourocard: Ourocard card brand.
+CardBrand:Sorocred: Sorocred card brand.
+CardBrand:Verdecard: Verdecard card brand.
+CardBrand:Credz: Credz card brand.
+CardBrand:Goodcard: Goodcard card brand.
+PaymentMethod:CreditCard: Credit Card payment method.
+PaymentMethod:DebitCard: Debit Card payment method.
+PaymentMethod:Boleto: Boleto payment method.
+PaymentMethod:BankTransfer: Bank Transfer payment method.
+PaymentMethod:External: External payment method.
+PaymentMethod:GiftCard: Gift Card payment method.
+PaymentMethod:Balance: Balance payment method.
+PaymentMethod:CreditCardPrivateBrand: Credit Card Private Brand payment method.
+PaymentMethod:Pix: PIX payment method.
+PaymentMethod:Crypto: Cryptocurrencies payment method.
+PaymentMethod:Voucher: Voucher payment method.
+PaymentMethod:WalletCredit: Wallet Credit payment method.
+PaymentMethod:WalletDebit: Wallet Debit payment method.
+PaymentStatus:Started: The transaction of this method has started, but no transactions have been processed yet.
+PaymentStatus:Captured: The transaction of this payment method has been captured, and funds are secured.
+PaymentStatus:Refunded: The transaction of this payment method has been refunded.
+PaymentStatus:Denied: The transaction of this payment method has been denied either by the issuing bank, acquirer, or anti-fraud tool.
+PaymentStatus:Cancelled: The transaction of this payment method has been canceled after being previously authorized.
+PaymentStatus:Expired: The transaction of this payment method has been reported as expired.
+PaymentStatus:Chargeback: The transaction of this payment method has been reported as chargeback.
+PaymentStatus:MoneyReceived: The funds of the transaction of this payment method have been transferred to the store.
+PaymentStatus:PartialRefunded: The transaction of this payment method has been partially refunded.
+PaymentStatus:Pending: The system is waiting for the result of another process, such as anti-fraud analysis, to complete the transaction. Whether the transaction has already been authorized or not depends on how your flows are configured.
+PaymentStatus:Authorized: The transaction of this method has been authorized but not yet captured. The credit limit has been reserved on the credit card.
+PaymentStatus:Error: There was an error while processing the transaction of this payment method. This status is followed by a message with more details about the error.
+PaymentStatus:RedFlag: The system explicitly marked this transaction as a major issue that should be investigated. This is a rare status. You don't need to worry about it while integrating with Tuna.
+PaymentStatus:PendingCapture: For some reason, the transaction of this payment method could not be captured. The system will automatically retry to capture it later.
+PaymentStatus:PendingRefund: The transaction of this payment method has been partially refunded.
+PaymentStatus:NotProcessed: This payment method will not be processed. This status is final.
+PaymentStatus:PendingCancel: For some reason, the transaction of this payment method could not be canceled. The system will automatically retry to cancel it later.
